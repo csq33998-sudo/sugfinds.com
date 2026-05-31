@@ -10,6 +10,30 @@
   --green-dark: #0a7336;
   --green-soft: #dff5e5;
   --shadow: 0 16px 45px rgba(18, 32, 23, 0.08);
+  --header-bg: rgba(251, 253, 248, 0.9);
+  --panel-bg: rgba(255, 255, 255, 0.9);
+  --input-bg: #ffffff;
+  --grid-line: rgba(18, 161, 80, 0.08);
+  --page-wash: rgba(251, 253, 248, 0.9);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #eff8f1;
+  --muted: #b5c5b9;
+  --line: #294134;
+  --paper: #0d1510;
+  --panel: #142019;
+  --soft: #17291f;
+  --green: #39d47b;
+  --green-dark: #8af0b0;
+  --green-soft: #183c28;
+  --shadow: 0 18px 48px rgba(0, 0, 0, 0.34);
+  --header-bg: rgba(13, 21, 16, 0.9);
+  --panel-bg: rgba(20, 32, 25, 0.92);
+  --input-bg: #101a14;
+  --grid-line: rgba(57, 212, 123, 0.08);
+  --page-wash: rgba(13, 21, 16, 0.9);
 }
 
 * {
@@ -23,9 +47,9 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(rgba(251, 253, 248, 0.9), rgba(251, 253, 248, 0.9)),
-    linear-gradient(90deg, rgba(18, 161, 80, 0.08) 1px, transparent 1px),
-    linear-gradient(rgba(18, 161, 80, 0.08) 1px, transparent 1px),
+    linear-gradient(var(--page-wash), var(--page-wash)),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
     var(--paper);
   background-size: auto, 12px 12px, 12px 12px, auto;
   background-attachment: fixed;
@@ -42,7 +66,8 @@ a {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -65,8 +90,8 @@ input {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid rgba(220, 233, 221, 0.92);
-  background: rgba(251, 253, 248, 0.9);
+  border-bottom: 1px solid var(--line);
+  background: var(--header-bg);
   backdrop-filter: blur(16px);
 }
 
@@ -126,6 +151,51 @@ input {
   color: var(--muted);
   font-size: 15px;
   font-weight: 650;
+}
+
+.site-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.language-control select,
+.theme-toggle {
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--input-bg);
+  color: var(--ink);
+  font-weight: 750;
+}
+
+.language-control select {
+  min-width: 136px;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  min-width: 82px;
+  padding: 0 14px;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.theme-toggle[aria-pressed="true"] {
+  border-color: var(--green);
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 .nav-links a,
@@ -237,7 +307,7 @@ h1 {
 
 .button.secondary {
   border: 1px solid var(--line);
-  background: #fff;
+  background: var(--input-bg);
   color: var(--ink);
 }
 
@@ -285,7 +355,7 @@ details,
 .cta-box {
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--panel-bg);
   box-shadow: var(--shadow);
 }
 
@@ -375,11 +445,13 @@ details p,
   border-radius: 12px;
   padding: 0 14px;
   color: var(--ink);
-  background: #fff;
+  background: var(--input-bg);
   outline: none;
 }
 
 .search-field input:focus,
+.language-control select:focus-visible,
+.theme-toggle:focus-visible,
 .segment:focus-visible,
 .button:focus-visible,
 a:focus-visible,
@@ -408,7 +480,7 @@ summary:focus-visible {
   min-height: 42px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: #fff;
+  background: var(--input-bg);
   color: var(--muted);
   padding: 8px 13px;
   cursor: pointer;
@@ -505,7 +577,7 @@ summary:focus-visible {
   padding: 28px;
   border: 1px dashed var(--line);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--panel-bg);
   color: var(--muted);
   text-align: center;
 }
@@ -619,7 +691,7 @@ details p {
 
 .footer {
   border-top: 1px solid var(--line);
-  background: rgba(251, 253, 248, 0.9);
+  background: var(--header-bg);
 }
 
 .footer-inner {
@@ -648,6 +720,12 @@ details p {
     gap: 18px;
     overflow-x: auto;
     padding-bottom: 3px;
+  }
+
+  .site-controls {
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-between;
   }
 
   .hero {
@@ -687,6 +765,16 @@ details p {
   .product-actions {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .site-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .language-control select,
+  .theme-toggle {
+    width: 100%;
   }
 
   .button,
