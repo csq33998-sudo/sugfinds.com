@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">SugFinds streetwear spreadsheet icon</title>
+  <desc id="desc">Round orange SugFinds icon for streetwear spreadsheet finds and W2C links.</desc>
+  <rect width="512" height="512" fill="#122017"/>
+  <circle cx="256" cy="256" r="178" fill="#fff"/>
+  <g transform="translate(132 95)">
+    <circle cx="124" cy="113" r="83" fill="#ffb323"/>
+    <path fill="#ff7a16" d="M66 162c37 14 78 8 111-16 22-16 39-39 47-65 7 70-46 133-119 133-40 0-76-20-99-50 20 9 41 12 60-2z"/>
+    <path fill="#ffd84f" d="M70 101c8-35 36-63 72-70 23-5 45-1 64 9-20 13-38 36-52 68-12 29-51 41-84 31-8-3-9-25 0-38z"/>
+    <path fill="#dd4b12" d="M175 172c15 12 35 25 61 42 8 5 10 15 5 23-5 7-15 9-23 4-27-18-49-33-65-47 8-6 15-13 22-22z"/>
+    <path fill="#f05f13" d="M112 194c31-1 60-14 82-36-2 35-27 63-61 70-36 8-72-1-99-23 25 0 50-3 78-11z"/>
+  </g>
+  <text x="256" y="374" fill="#263238" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="800" text-anchor="middle" letter-spacing="1">SF</text>
+  <text x="256" y="424" fill="#263238" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="middle" letter-spacing="1">SUGFINDS</text>
+</svg>
