@@ -21,6 +21,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sugfinds.com/blog.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sugfinds.com/blog/sugargoo-w2c-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sugfinds.com/blog/sugargoo-qc-photo-checklist.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sugfinds.com/blog/sugargoo-shipping-cost-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sugfinds.com/faq.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -143,6 +163,36 @@
   <url>
     <loc>https://sugfinds.com/guides.html?lang=pt</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sugfinds.com/blog.html?lang=de</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sugfinds.com/blog.html?lang=fr</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sugfinds.com/blog.html?lang=es</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sugfinds.com/blog.html?lang=it</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sugfinds.com/blog.html?lang=nl</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sugfinds.com/blog.html?lang=pt</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
