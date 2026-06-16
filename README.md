@@ -1,12 +1,12 @@
-# MaisonLooks StreetStyle Finds
+# sugargoo StreetStyle Finds
 
 Static SEO discovery page for promoting `https://streetstyle.maisonlooks.com/`.
 
 ## Positioning
 
-The page is designed as a helpful streetwear finds hub rather than a direct copy of existing spreadsheet sites. Its structure follows the direct "finds today" pattern while keeping the writing and buying guidance MaisonLooks-specific. It includes:
+The page is designed as a helpful streetwear finds hub rather than a direct copy of existing spreadsheet sites. Its structure follows the direct "finds today" pattern while keeping the writing and buying guidance sugargoo-specific. It includes:
 
-- Clear MaisonLooks-focused title and metadata
+- Clear sugargoo-focused title and metadata
 - Searchable streetwear find cards with QC notes
 - Category navigation
 - Editorial selection criteria

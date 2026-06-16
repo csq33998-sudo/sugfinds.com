@@ -647,6 +647,101 @@ summary:focus-visible {
   margin-bottom: 0;
 }
 
+.guide-article-section {
+  padding-top: 10px;
+}
+
+.long-guide {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel-bg);
+  box-shadow: var(--shadow);
+}
+
+.long-guide h2 {
+  max-width: 760px;
+}
+
+.guide-lead {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.article-copy {
+  display: grid;
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.article-copy p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.guide-steps {
+  display: grid;
+  gap: 18px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: guide-step;
+}
+
+.guide-steps li {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  padding: 20px 20px 20px 76px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--input-bg);
+  counter-increment: guide-step;
+}
+
+.guide-steps li::before {
+  content: counter(guide-step);
+  position: absolute;
+  left: 20px;
+  top: 22px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--green);
+  color: #fff;
+  font-weight: 950;
+}
+
+.guide-steps h3,
+.guide-steps p,
+.guide-note p {
+  margin: 0;
+}
+
+.guide-steps p,
+.guide-note p {
+  color: var(--muted);
+}
+
+.guide-note {
+  display: grid;
+  gap: 6px;
+  margin-top: 22px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--soft);
+}
+
+.guide-note strong {
+  color: var(--green-dark);
+}
+
 .faq-list {
   max-width: 860px;
   display: grid;
@@ -784,6 +879,19 @@ details p {
 
   .hero-copy {
     font-size: 17px;
+  }
+
+  .long-guide {
+    padding: 24px 18px;
+  }
+
+  .guide-steps li {
+    padding: 72px 18px 18px;
+  }
+
+  .guide-steps li::before {
+    left: 18px;
+    top: 18px;
   }
 }
 
